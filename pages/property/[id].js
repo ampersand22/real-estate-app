@@ -6,6 +6,7 @@ import millify from 'millify';
 
 import { baseUrl, fetchApi } from '../utils/fetchAPI';
 import { getServerSideProps } from "../search";
+import ImageScrollbar from "@/components/ImageScrollbar";
 
 // we get to the property details by rendering it out in server side props
 const PropertyDetails = ({ propertyDetails: {price, rentFrequency, rooms, title, baths, area, agency, isVerified, description, type, purpose, furnishingStatus, amenities, photos } }) => (
